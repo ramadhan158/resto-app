@@ -1,0 +1,204 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*styling navbar*/
+.container-nav {
+	background-color: red;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-nav h1 {
+	color: white;
+	margin-right: 10px;
+}
+
+.container-nav button {
+	margin: 0 5px;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px;
+	color: black;
+}
+
+.container-nav button:hover {
+	background-color: steelblue;
+	color: white;
+	cursor: pointer;
+}
+
+.aktif {
+	background-color: yellow;
+}
+/*styling navbar end here*/
+
+/*styling menu*/
+.container-menu {
+	padding: 10px;
+	display: flex;
+	margin-left: 10px;
+}
+/*styling menu end here*/
+
+/*styling keranjang*/
+.container-keranjang {
+	height: auto;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	border-radius: 5px;
+}
+
+.container-keranjang .keranjang{
+	margin: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.keranjang-top{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: yellow;
+}
+
+.keranjang-top .tambah-kurang {
+	display: flex;
+	align-items: center;
+}
+
+.keranjang-top h1 {
+	padding-right: 5px; 
+}
+
+.keranjang-top .tambah-kurang span {
+	height: 20px;
+	width: 20px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+
+.keranjang-top .tambah-kurang span:hover {
+	background-color: steelblue;
+	cursor: pointer;
+}
+
+.keranjang-top .nama-harga {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.keranjang-bottom {
+	display: flex;
+	padding: 5px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.keranjang-bottom button {
+	border: 0;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	background-color: red;
+	margin: 5px;
+}
+
+.keranjang-bottom button:hover {
+	background-color: steelblue;
+}
+/*styling keranjang end here*/
+
+/*styling card menu*/
+.container-cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	flex: 2;
+}
+
+.container-cards div {
+	margin: 5px;
+	height: 200px;
+	width: 200px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: red;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.container-cards div:hover {
+	background-color: steelblue;
+	transform: scale(1.01);
+}
+
+.container-cards div span {
+	margin: 3px;
+	padding: 5px;
+	background-color: yellow;
+	color: black;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.container-cards div img {
+	width: 100%;
+	height: 130px;
+	border-radius: 5px;
+}
+
+.container-cards div h2 {
+	font-size: 18px;
+}
+
+.container-cards h2 {
+	padding: 0 5px;
+	width: 180px;
+	border-radius: 5px;
+	color: black;
+	background-color: yellow;
+}
+/*styling card menu end here*/
+
+/*styling total keranjang*/
+.total-keranjang {
+	bottom: 0px;
+	padding: 10px;
+	border-radius: 20px;
+	position: fixed;
+	background-color: yellow;
+	display: flex;
+}
+
+.total-keranjang button {
+	border: 0;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	background-color: red;
+}
+
+/*styling total keranjang ends here*/
